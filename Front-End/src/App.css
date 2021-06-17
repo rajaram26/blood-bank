@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sideNav{
+  text-decoration: none;
+}
+.sideNav ul li {
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+  padding: .5rem;
+  margin: .5rem;
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.sideNav ul li a {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+}
+.donarBox div {
+  margin: auto;
+}
+
+.profile div h3 {
+  float: left;
+  margin: .5rem 0 .5rem 1.5rem;
+  padding: .5rem;
+}
+.profile div input{
+  width: 50%;
+  float: left;
+  margin: .5rem 0 .5rem 1.5rem;
+  padding: .5rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th{
+  background-color: red;
+  color:white;
+}
+.edit button{
+  margin-left: 1rem;
+  background-color: teal;
+  color: white;
+  border-radius: 3px;
+  align-items: center;
+  box-shadow: teal;
+}
+
+
+.wrapper-1{
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+.card-1{
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  height: 464px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5% auto;
+  padding: 20px;
+  position: relative; 
+}
+.card-1 div{
+	padding:15px;
+	padding-left:20px;
+  float: left;
+}
+
+.card-1 .btn{
+	width:100px;
+	height:40px;
+	background-color:black;
+	color:white;
+	font-size:20px;
+	border-radius:.5rem;
+	cursor:pointer;
+}
+.card-1 div input{
+  margin: 0 0 .3rem 1rem ;
+}
+.card-1 div select{
+  margin: 0 0 .3rem 1rem ;
+}
+
+.addDonar div {
+  text-align: left;
+  margin-left: 10%;
+  width: 100%;
+}
+.addDonar{
+  margin-top: 1rem;
+}
+.addDonar div label{
+ padding: 1rem;
+ font-size: 18px;
+}
+.profile-card div img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+.profile-card{
+  width: 260px;
+  height: 330px;
+  border: 2px solid #0012;
+  border-radius: 5px;
+  margin: 1.5rem;
+}
+.profile-card div label{
+  margin-left: .7rem;
+}
+.profile-card div h4{
+  margin-top:.5rem;
+}
+
+.profile div h5{
+  margin-left: 2rem;
+}
