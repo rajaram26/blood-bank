@@ -46,7 +46,26 @@ public class BloodBankService {
 	}
 
 	public List<BB_sample> getAllSample() {
-		return (List<BB_sample>) sample.findAll();
+		ArrayList<BB_sample> sam = (ArrayList<BB_sample>) sample.findAll();
+		for(int i=0;i<sam.size();i++) {
+			LocalDate nowDate = LocalDate.now();
+			String date = sam.get(i).getDate();
+			LocalDate pastDate = LocalDate.parse(date);
+			Period p = Period.between(pastDate, nowDate);
+			int months = p.getMonths();
+			int years = p.getYears();
+			int days;
+			if(months == 0 && years ==0) {
+				days=p.getDays();
+			}else {
+				days=p.getDays()+(months*30);
+			}
+			if(days>=90) {
+				sample.deleteById(sam.get(i).getId());
+				return (ArrayList<BB_sample>) sample.findAll();
+			}
+		}
+		return sam;
 	}
 
 	public BB_user getById(String id) {
